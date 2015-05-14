@@ -1,0 +1,67 @@
+<div id="header">
+<h1>Milton Keynes Perl Mongers</h1>
+</div>
+<p>Welcome to Milton Keynes Perl Mongers.  This
+group exists for anyone in or near to Milton Keynes to have fun learning
+about the Perl computer programming language.</p>
+
+<p>It doesn't matter how much experience you have with Perl:  the group
+exists for everyone from complete beginners to experienced
+developers.</p>
+
+<h2>Mailing List</h2>
+
+<p>Please
+<a href="http://mail.pm.org/mailman/listinfo/miltonkeynes-pm" type="text/html"
+  title="Milton Keynes Perl Mongers Mailing List">join our mailing
+  list</a> and introduce yourself to others.  You can read <a
+  href="http://mail.pm.org/pipermail/miltonkeynes-pm/" type="text/html"
+  title="Milton Keynes Perl Mongers Mailing List Archives">the list's
+  archives</a> online.</p>
+
+<h2>IRC</h2>
+
+<p>If you use <abbr title="Internet Relay Chat">IRC</abbr>, join us at
+#miltonkeynes.pm on <a href="http://www.irc.perl.org/" title="Details of the Perl IRC network">irc.perl.org</a>.</p>
+
+<h2>Forthcoming Meetings</h2>
+
+<p>We hold social meetings on the second Tuesday of every month where we get together in a pub and talk about various Perl and non-Perl things.</p>
+
+<p>Please subscribe to our mailing list or join our IRC channel to keep up to date with meeting announcements.</p>
+
+<p>
+If you're visiting Milton Keynes and would like to meet up with us, or if you'd like to arrange an impromptu meeting for any reason, please introduce yourself on the mailing list or IRC.
+</p>
+
+<h3>Next Social Meeting</h3>
+
+<p>Our next social meeting will take place on [% social %] at <a href="http://miltonkeynes.openguides.org/?J.D_Wetherspoon%2C_Central_Milton_Keynes" title="J D Wetherspoon in the Open Guide to Milton Keynes" type="text/html">Wetherspoon's in Central Milton Keynes</a>.  Please come along and say hello.</p>
+<p>If you're not sure that you'll recognise us in the pub, feel free to ask for someone's mobile number on the mailing list - or post to the list when you arrive. </p>
+
+<h3>Next Technical Meeting</h3>
+[% IF techmeet.defined %]
+<p>Our next technical meeting is scheduled to take place on [% techmeet.Date_Formatted %] at <a href="[% techmeet.Map %]">[% techmeet.Address %]</a> starting at [% techmeet.Time %]</p>
+[% ELSE %]
+<p>We don't currently have a technical meeting planned.  If you'd like to talk to us about Perl, or about an area that you think
+would be of interest to a Perl using audience, please get in touch!</p>
+[% END %]
+
+<h3>Calendar</h3>
+<p>This calendar shows upcoming interesting events.</p>
+<p><iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23F8F8F8&amp;src=hbds3ir7c492h924j0a0vdtigc%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Europe%2FLondon&amp;mode=AGENDA" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
+
+<h2>Previous Meetings</h2>
+
+<p>Talks from our previous technical meetings are listed by year on the following pages:</p>
+<ul>
+    <li><a href="techtalks2014.html">Talks from 2014</a></li>
+    <li><a href="techtalks2013.html">Talks from 2013</a></li>
+    <li><a href="techtalks2012.html">Talks from 2012</a></li>
+    <li><a href="techtalks2011.html">Talks from 2011</a></li>
+    <li><a href="techtalks2010.html">Talks from 2010</a></li>
+    <li><a href="techtalks2009.html">Talks from 2009</a></li>
+    <li><a href="techtalks2008.html">Talks from 2008</a></li>
+    <li><a href="techtalks2007.html">Talks from 2007</a></li>
+    <li><a href="techtalks2006.html">Talks from 2006</a></li>
+</ul>
