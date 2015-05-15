@@ -1,6 +1,8 @@
+[% USE Dumper %]
 <div id="header">
 <h1>Milton Keynes Perl Mongers</h1>
 </div>
+[% Dumper.dump_html(techmeet) %]
 <p>Welcome to Milton Keynes Perl Mongers.  This
 group exists for anyone in or near to Milton Keynes to have fun learning
 about the Perl computer programming language.</p>
@@ -42,6 +44,10 @@ If you're visiting Milton Keynes and would like to meet up with us, or if you'd 
 <h3>Next Technical Meeting</h3>
 [% IF techmeet.defined %]
 <p>Our next technical meeting is scheduled to take place on [% techmeet.Date_Formatted %] at <a href="[% techmeet.Map %]">[% techmeet.Address %]</a> starting at [% techmeet.Time %]</p>
+<p>Talks planned so far:-</p>
+[% FOREACH speaker IN techmeet.Talks.keys %]
+   <p>[% speaker %]: [% techmeet.Talks.$speaker %]</p>
+[% END %]
 [% ELSE %]
 <p>We don't currently have a technical meeting planned.  If you'd like to talk to us about Perl, or about an area that you think
 would be of interest to a Perl using audience, please get in touch!</p>
