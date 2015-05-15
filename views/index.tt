@@ -44,10 +44,13 @@ If you're visiting Milton Keynes and would like to meet up with us, or if you'd 
 <h3>Next Technical Meeting</h3>
 [% IF techmeet.defined %]
 <p>Our next technical meeting is scheduled to take place on [% techmeet.Date_Formatted %] at <a href="[% techmeet.Map %]">[% techmeet.Address %]</a> starting at [% techmeet.Time %]</p>
-<p>Talks planned so far:-</p>
+<p>Talks planned so far:-
+<ul>
 [% FOREACH speaker IN techmeet.Talks.keys %]
-   <p>[% speaker %]: [% techmeet.Talks.$speaker %]</p>
+   <li>[% speaker %]: [% techmeet.Talks.$speaker %]</li>
 [% END %]
+</ul>
+</p>
 [% ELSE %]
 <p>We don't currently have a technical meeting planned.  If you'd like to talk to us about Perl, or about an area that you think
 would be of interest to a Perl using audience, please get in touch!</p>
