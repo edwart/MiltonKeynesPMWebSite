@@ -36,5 +36,5 @@ techmeet:
         Paul Mooney: PAAS Heroku with Perl
         Colin Newell: Jenkins build indicator on a Raspberry Pi and quick perl script
         Colin Bradford: Websockets and Mojolicious for real time applications
-		Nick Morrott: Writing a Vim syntax checker
-		Nick Morrott: Plugins that overload vim functionality without overloading your brain
+        Nick Morrott: Writing a Vim syntax checker and Plugins that overload vim functionality without overloading your brain
+        Pavel Merdin: Rules to make Perl syntax more bearable
