@@ -1,18 +1,26 @@
 package miltonkeynespm;
 use Dancer2;
 use DateTime;
+use Data::Dumper;
 use Lingua::EN::Numbers::Ordinate;
+use YAML qw/LoadFile/;
 
 our $VERSION = '0.1';
 
 
 get '/' => sub {
-	my $techmeet = config->{techmeet};
-	my ($day, $month, $year) = split('/', $techmeet->{Date});
-	my $techdate = DateTime->new(year => $year, month => $month, day => $day);
-	$techmeet->{Date_Formatted} = format_date($techdate);
+    my $appdir = config->{appdir};
+    my $techmeet = undef;
+    if (-f "$appdir/techmeet.yml") {
+        my ($hashref, $arrayref, $string) = LoadFile("$appdir/techmeet.yml");
+        $techmeet = $hashref->{techmeet};
+        my ($day, $month, $year) = split('/', $techmeet->{Date});
+        my $techdate = DateTime->new(year => $year, month => $month, day => $day);
+        $techmeet->{Date_Formatted} = format_date($techdate);
+    }
+    debug Dumper($techmeet);
     template 'index', { social => format_date(next_social()),
-					    techmeet => config->{techmeet},
+					    techmeet => $techmeet,
 						};
 };
 
@@ -24,11 +32,8 @@ sub next_social {
 	my $today = DateTime->today();
 	my $day = nth_day_of_month(2, 2, $today->year, $today->month);
 	if ($day < $today) {
-		debug "missed it";
 		my $next_month = $today->month + 1;
 		my $year = $today->year;
-			debug "$next_month $year";
-		debug $next_month;
 		if ($next_month > 12) {
 			$year++;
 			$next_month = 1;

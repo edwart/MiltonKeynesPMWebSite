@@ -1,3 +1,4 @@
+[% USE Dumper %]
 <div id="header">
 <h1>Milton Keynes Perl Mongers</h1>
 </div>
@@ -40,12 +41,17 @@ If you're visiting Milton Keynes and would like to meet up with us, or if you'd 
 <p>If you're not sure that you'll recognise us in the pub, feel free to ask for someone's mobile number on the mailing list - or post to the list when you arrive. </p>
 
 <h3>Next Technical Meeting</h3>
+<!--
+[% Dumper.dump(techmeet) %]
+-->
 [% IF techmeet.defined %]
 <p>Our next technical meeting is scheduled to take place on [% techmeet.Date_Formatted %] at <a href="[% techmeet.Map %]">[% techmeet.Address %]</a> starting at [% techmeet.Time %]</p>
 <p>Talks planned so far:-
 <ul>
-[% FOREACH speaker IN techmeet.Talks.keys %]
-   <li>[% speaker %]: [% techmeet.Talks.$speaker %]</li>
+[% FOREACH talk IN techmeet.Talks %]
+[% FOREACH speaker IN talk.keys %]
+   <li>[% speaker %]: [% talk.$speaker %]</li>
+[% END %]
 [% END %]
 </ul>
 </p>
