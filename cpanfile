@@ -1,4 +1,6 @@
-requires "Dancer2" => "0.160000";
+requires "Dancer2"                       => "0.160000";
+requires "DateTime"                      => "1.19";
+requires "Lingua::EN::Numbers::Ordinate" => "1.02";
 
 recommends "YAML"             => "0";
 recommends "URL::Encode::XS"  => "0";
