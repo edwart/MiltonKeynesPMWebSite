@@ -4,7 +4,6 @@ techmeet:
     Address: IMS Evolve, 2nd Floor, Matrix House, 2 North Forth Street, Central Milton Keynes, MK9 1NJ
     Map: https://goo.gl/maps/F49T1
     Talks:
-       - Rick Deller: The Perl recruitment Market
        - Paul Mooney: PAAS Heroku with Perl
        - Colin Newell: Jenkins build indicator on a Raspberry Pi and quick perl script
        - Colin Bradford: Websockets and Mojolicious for real time applications
