@@ -11,17 +11,24 @@ our $VERSION = '0.1';
 get '/' => sub {
     my $appdir = config->{appdir};
     my $techmeet = undef;
+	my $techdate;
     if (-f "$appdir/techmeet.yml") {
         my ($hashref, $arrayref, $string) = LoadFile("$appdir/techmeet.yml");
         $techmeet = $hashref->{techmeet};
         my ($day, $month, $year) = split('/', $techmeet->{Date});
-        my $techdate = DateTime->new(year => $year, month => $month, day => $day);
+        $techdate = DateTime->new(year => $year, month => $month, day => $day);
         $techmeet->{Date_Formatted} = format_date($techdate);
     }
     debug Dumper($techmeet);
-    template 'index', { social => format_date(next_social()),
-					    techmeet => $techmeet,
-						};
+	if ($techdate and $techdate >= DateTime->now()){
+		template 'index', { social => format_date(next_social()),
+							techmeet => $techmeet,
+							};
+	}
+	else {
+		template 'index', { social => format_date(next_social()),
+							};
+	}
 };
 
 sub format_date {
@@ -41,6 +48,7 @@ sub next_social {
 		}
 		$day = nth_day_of_month(2, 2, $year, $next_month);
 	}
+	debug "Next social ".$day->ymd('-');
 	return $day;
 }
 sub nth_day_of_month {
