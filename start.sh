@@ -1,0 +1,1 @@
+sudo /usr/local/bin/start_server --port=80 --daemonize --log-file=logs/server.log --status-file=logs/server.status --pid-file=logs/server.pid -- /usr/local/bin/plackup -s Starman --port=80 bin/app.psgi
