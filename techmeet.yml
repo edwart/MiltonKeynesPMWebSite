@@ -1,12 +1,7 @@
 techmeet:
-    Date: 16/06/2015
+    Date: 13/09/2016
     Time: 7pm
-    Address: IMS Evolve, 2nd Floor, Matrix House, 2 North Forth Street, Central Milton Keynes, MK9 1NJ
-    Map: https://goo.gl/maps/F49T1
+    Address: Open University, in the Systems Seminar Room
+    Map: https://goo.gl/maps/Ku4aWv8LrAQ2
     Talks:
-       - Paul Mooney: PAAS Heroku with Perl
-       - Colin Newell: Jenkins build indicator on a Raspberry Pi and quick perl script
-       - Colin Bradford: Websockets and Mojolicious for real time applications
-       - Nick Morrott: Writing a Vim syntax checker
-       - Nick Morrott: Plugins that overload vim functionality without overloading your brain
-       - Pavel Merdin: Perl development practices at Fotki
+       - Colin Newell: Deploying Perl applications to Docker
