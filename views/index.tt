@@ -55,6 +55,9 @@ If you're visiting Milton Keynes and would like to meet up with us, or if you'd 
 [% END %]
 </ul>
 </p>
+[% FOREACH dir in techmeet.Directions %]
+[% dir %]
+[% END %]
 [% ELSE %]
 <p>We don't currently have a technical meeting planned.  If you'd like to talk to us about Perl, or about an area that you think
 would be of interest to a Perl using audience, please get in touch!</p>
