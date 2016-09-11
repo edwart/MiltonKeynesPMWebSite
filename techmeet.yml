@@ -25,6 +25,7 @@ techmeet:
     Talks:
        - Colin Newell: Deploying Perl applications to Docker
        - Colin Bradford: Introduction to Message Busses
+       - Jon Allen: GDPR for Developers
        - Tony Edwardson: Migrate to Perl 6 ?
         
        
