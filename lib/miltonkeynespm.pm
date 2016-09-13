@@ -19,8 +19,7 @@ get '/' => sub {
         $techdate = DateTime->new(year => $year, month => $month, day => $day);
         $techmeet->{Date_Formatted} = format_date($techdate);
     }
-    debug Dumper($techmeet);
-	if ($techdate and $techdate >= DateTime->now()){
+	if ($techdate and $techdate >= DateTime->today()){
 		template 'index', { social => format_date(next_social()),
 							techmeet => $techmeet,
 							};
