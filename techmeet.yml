@@ -1,31 +1,12 @@
 techmeet:
-    Date: 13/09/2016
+    Date: 12/09/2017
     Time: 7pm
-    Address: Open University, in the Systems Seminar Room
+    Address: 4 Thorwold Place, Loughton, Miltion Keynes, MK5 8BH
     Map: https://goo.gl/maps/Ku4aWv8LrAQ2
-    Directions: |
-        How to find the Open University Systems Seminar Room
-        <p>First, find the Open University campus as described at <a href="http://www3.open.ac.uk/contact/locations.aspx" title="How to find the Open University" type="text/html">http://www3.open.ac.uk/contact/locations.aspx</a>.</p>
-        <p>
-        Enter the campus (signposted Open University, not Open University East), via Brickhill Street (V10).
-        Take the middle lane past Security (on the left), through the barriers, and then turn right on to Ring Road East.
-        Ahead you will see the road narrows to single lane on your side of the road, where there are no entry signs.  Just prior to this is the entrance to a car park on the left (marked Inner East Parking on the campus map).
-        Take this left turn and head to the top left (North West on the campus map) of the car park.
-        The meeting is in the south east section of the Venables Building, nearest the Inner East Parking on the campus map.
-        Take the path (marked in orange on the campus map) west from the car park toward the centre of campus.
-        Take a right under an archway in to the courtyard area bound by Venables South, East, and South East, keeping right (heading North East on the campus map), behind the building section marked South East.
-        You will find a double door on your right, which is Entrance G at the South East section of Venables Building.
-        We'll see you there, as these are usually access controlled doors, so you will probably need to be let in.
-        </p>
-        <p>If you haven't attended one of our meetings at the Open University before, you might want to ask for someone's phone number in case you have trouble finding us.</p>
-        <p>
-        If you need a lift to the meeting, please ask
-        <a href="/" type="text/html" title="The Milton Keynes Perl Mongers Home Page">our mailing list or IRC channel</a>.
-        </p>
+    Directions: https://goo.gl/maps/2CHF6ybkyLo
     Talks:
-       - Colin Newell: Deploying Perl applications to Docker
-       - Colin Bradford: Introduction to Message Busses
-       - Jon Allen: GDPR for Developers
-       - Tony Edwardson: Migrate to Perl 6 ?
-        
-       
+       - Colin Newell: Recommending Crypto 1
+       - Peter Edwards: Dancer2 to leverage a legacy Perl codebase
+       - Colin Bradford: Path of data packets over the internet
+       - Tony Edwardson: Using Dancer2, OpenAPI and Postman to build Apis
+       - Nick Morrott : Distro packaging CPAN releases
