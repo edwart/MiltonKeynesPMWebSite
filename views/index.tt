@@ -1,4 +1,7 @@
 [% USE Dumper %]
+<!--
+[% Dumper.dump( social, techmeet.Date_Formatted ) %]
+-->
 <div id="header">
 <h1>Milton Keynes Perl Mongers</h1>
 </div>
@@ -35,10 +38,12 @@ developers.</p>
 If you're visiting Milton Keynes and would like to meet up with us, or if you'd like to arrange an impromptu meeting for any reason, please introduce yourself on the mailing list or IRC.
 </p>
 
+[% UNLESS techmeet.defined && social == techmeet.Date_Formatted  %]
 <h3>Next Social Meeting</h3>
 
 <p>Our next social meeting will take place on [% social %] at <a href="https://www.jdwetherspoon.com/pubs/all-pubs/england/buckinghamshire/wetherspoons-milton-keynes" title="J D Wetherspoon in the Open Guide to Milton Keynes" type="text/html">Wetherspoon's in Central Milton Keynes</a>.  Please come along and say hello.</p>
 <p>If you're not sure that you'll recognise us in the pub, feel free to ask for someone's mobile number on the mailing list - or post to the list when you arrive. </p>
+[% END %]
 
 <h3>Next Technical Meeting</h3>
 <!--

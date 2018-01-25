@@ -1,11 +1,10 @@
 techmeet:
-    Date: 12/09/2017
+    Date: 13/02/2018
     Time: 7pm
     Address: 4 Thorwold Place, Loughton, Miltion Keynes, MK5 8BH
     Map: https://goo.gl/maps/Vx5FRy3Jm5R2
     Talks:
-       - Colin Newell: Recommending Crypto 1
-       - Peter Edwards: Dancer2 to leverage a legacy Perl codebase
-       - Colin Bradford: Path of data packets over the internet
-       - Tony Edwardson: Using Dancer2, OpenAPI and Postman to build Apis
-       - Nick Morrott : Distro packaging CPAN releases
+       - Colin Newell: The Pull Request Challenge
+       - Dave Lambley: Software necromancy with Perl
+       - Colin Bradford: Software Defined Networking
+       - Tony Edwardson: TBA
