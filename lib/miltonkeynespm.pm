@@ -36,7 +36,7 @@ sub format_date {
 }
 sub next_social {
 	my $today = DateTime->today();
-	my $day = nth_day_of_month(2, 2, $today->year, $today->month);
+	my $day = nth_day_of_month(2, 4, $today->year, $today->month);
 	if ($day < $today) {
 		my $next_month = $today->month + 1;
 		my $year = $today->year;
