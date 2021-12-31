@@ -1,1 +1,2 @@
-sudo /usr/local/bin/start_server --port=80 --daemonize --log-file=logs/server.log --status-file=logs/server.status --pid-file=logs/server.pid -- /usr/local/bin/plackup -s Starman --port=80 bin/app.psgi
+#/home/tony/perl5/perlbrew/perls/perl-5.34.0/bin/start_server --port=443 --daemonize --log-file=logs/server.log --status-file=logs/server.status --pid-file=logs/server.pid -- plackup -s Starman --port=443 bin/app.psgi
+/home/tony/perl5/perlbrew/perls/perl-5.34.0/bin/start_server --port=8300 --daemonize --log-file=logs/server.log --status-file=logs/server.status --pid-file=logs/server.pid -- plackup -s Starman --port=8300 bin/app.psgi
