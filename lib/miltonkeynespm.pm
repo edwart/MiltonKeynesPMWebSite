@@ -45,7 +45,7 @@ sub next_social {
 			$next_month = 1;
 			debug "$next_month $year";
 		}
-		$day = nth_day_of_month(2, 2, $year, $next_month);
+		$day = nth_day_of_month(2, 4, $year, $next_month);
 	}
 	debug "Next social ".$day->ymd('-');
 	return $day;
@@ -69,7 +69,7 @@ sub nth_day_of_month {
   $date->add(days => $delta - ($date->day_of_week + $delta - $dow) % 7);
 
   # If we're not in the right month, then that month doesn't have the
-  # specified date (e.g. there's no 5th Tuesday in Sept. 2013).
+  # specified date (e.g. there's no 5th Thursday in Sept. 2013).
   return (($date->month == $month) ? $date : undef);
 }
 true;
