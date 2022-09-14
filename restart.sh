@@ -1,1 +1,3 @@
-start_server --port=8300 --restart --daemonize --log-file=logs/server.log --status-file=logs/server.status --pid-file=logs/server.pid -- plackup -s Starman bin/app.psgi
+#!/usr/bin/bash
+/var/www/html/MiltonKeynesPMWebSite/stop.sh
+/var/www/html/MiltonKeynesPMWebSite/start.sh
